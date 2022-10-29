@@ -3,29 +3,29 @@ import { GiNoodles, GiChopsticks } from "react-icons/gi";
 import { BsFillHouseDoorFill } from "react-icons/bs";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+
 function Category() {
   return (
     <List>
-      <div>
+      <NavLink to={"/cuisine/Italian"}>
         <FaPizzaSlice></FaPizzaSlice>
         <h4>Italian</h4>
-      </div>
+      </NavLink>
 
-      <div>
+      <NavLink to={"/cuisine/American"}>
         <FaHamburger></FaHamburger>
         <h4>American</h4>
-      </div>
+      </NavLink>
 
-      <div>
+      <NavLink to={"/cuisine/Thai"}>
         <GiNoodles></GiNoodles>
         <h4>Thai</h4>
-      </div>
+      </NavLink>
 
-      <div>
+      <NavLink to={"/cuisine/Japanese"}>
         <GiChopsticks></GiChopsticks>
         <h4>Japanese</h4>
-      </div>
+      </NavLink>
     </List>
   );
 }
